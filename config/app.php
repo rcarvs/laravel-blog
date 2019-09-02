@@ -165,6 +165,10 @@ return [
         App\Providers\BladeServiceProvider::class,
         App\Providers\HorizonServiceProvider::class,
         App\Providers\ObserverServiceProvider::class,
+        /*
+        * GraphQL Service Provider
+        */
+        \Rebing\GraphQL\GraphQLServiceProvider::class,
 
     ],
 
@@ -219,7 +223,7 @@ return [
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
-
+        'GraphQL' => 'Rebing\GraphQL\Support\Facades\GraphQL',
     ],
 
 ];
